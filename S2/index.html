@@ -64,7 +64,7 @@
             }
 
             drawGliderGun() {
-                // Write your function here
+                
                 const metrix = [
                     [26, 1],
                     [24, 2], [26, 2],
@@ -83,11 +83,37 @@
             }
 
             drawPulsar() {
-                // Write your function here
+                const metrix = [      
+                    [4, 2], [5, 2], [6, 2],   [10, 2], [11, 2], [12, 2], 
+                    [2, 4], [2, 5], [2, 6],   [7, 4], [7, 5], [7, 6],   [9, 4], [9, 5], [9, 6],  [14, 4], [14, 5], [14, 6], 
+                    [4, 7], [5, 7], [6, 7],   [10, 7], [11, 7], [12, 7], 
+                    [4, 9], [5, 9], [6, 9],   [10, 9], [11, 9], [12, 9], 
+                    [2, 10], [2, 11], [2, 12], [7, 10], [7, 11], [7, 12], [9, 10], [9, 11], [9, 12], [14, 10], [14, 11], [14, 12], 
+                    [4, 14], [5, 14], [6, 14], [10, 14], [11, 14], [12, 14]
+                ];
+
+
+                metrix.forEach(([x, y]) => {
+                this.grid[y][x] = true;
+             });
             }
 
             drawPentaDecathlon() {
-                // Write your function here
+                const metrix = [
+                    [5, 1], [6, 1], 
+                    [5, 2], [6, 2], 
+                    [5, 3], [6, 3], 
+                    [3, 4], [4, 4], [7, 4], [8, 4], 
+                    [5, 5], [6, 5], 
+                    [5, 6], [6, 6], 
+                    [5, 7], [6, 7], 
+                    [5, 8], [6, 8]  
+                ];
+
+                metrix.forEach(([x, y]) => {
+                    this.grid[y][x] = true;
+            });
+
             }
 
             countNeighbors(x, y) {
@@ -187,7 +213,7 @@
             });
 
             document.getElementById('pentaDecathlonBtn').addEventListener('click', () => {
-                game.drawGosperGliderGun();
+                game.drawPentaDecathlon();
                 renderer.draw();
             });
 
