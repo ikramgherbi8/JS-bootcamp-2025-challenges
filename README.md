@@ -10,9 +10,7 @@ Pattern Buttons: Places predefined patterns (Glider Gun, Pulsar, PentaDecathlon)
 
 CSS Styling:
 
-Centers content using CSS Grid
-Provides clean button styling
-Sets up a bordered canvas with light gray background
+The styling creates a dark-themed interface with teal accents, featuring a centered layout, gradient buttons that scale slightly on hover, and a bordered canvas that maintains proper sizing relative to the viewport.
 
 Game Class
 
